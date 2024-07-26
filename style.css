@@ -7,11 +7,10 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
-   align-items: center;
-    background-size: cover;
+    align-items: center;
+    padding-bottom: 5rem;
     background-color: rgb(5, 5, 41);
-   padding-bottom: 5rem;
-   overflow: hidden;
+    overflow: hidden;
 }
 .cotenar img{
     position: absolute;
@@ -22,20 +21,20 @@
 .clock{
     width: 20rem;
     height: 20rem;
+    position: relative;
     border-radius: 50%;
     text-align: center;
-    position: relative;
 }
 .clock span{
     position: absolute;
     display: inline-block;
-    color: rgb(255, 255, 255);
     transform: rotate(calc((var(--number)*30deg)));
     inset: 0.8rem;
+    color: rgb(255, 255, 255);
 }
 .clock span b{
-    transform: rotate(calc((var(--number)*-30deg)));
     display: inline-block;
+    transform: rotate(calc((var(--number)*-30deg)));
     font-size: 1.3rem;
 }
 .name_me{
@@ -49,14 +48,14 @@
 .sercel{
     width: 0.7rem;
     height: 0.7rem;
-    background-color: rgba(228, 134, 11, 0.911);
     position: absolute;
     border-radius: 50%;
+    background-color: rgba(228, 134, 11, 0.911);
     z-index: 4;
 }
 /* --------------secdend */
 .secend{
-    width:0.2rem;
+    width:0.3rem;
     height: 13.5rem;
     position: absolute;
     z-index: 3;
@@ -67,6 +66,8 @@
     height:7.8rem;
     position: absolute;
     background-color: red;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 /* ---------------minut */
 .minut{
@@ -74,6 +75,7 @@
     height: 11rem;
     position: absolute;
     z-index: 2;
+ 
 }
 .minut::before{
     content: " ";
@@ -81,6 +83,8 @@
     height: 6rem;
     position: absolute;
     background-color: rgba(9, 205, 219, 0.822);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 /* -----------------hour */
 .hour{
@@ -95,10 +99,8 @@
     height: 4.4rem;
     position: absolute;
     background-color: rgb(67, 143, 89);
-}
-/* color secend */
-.color_secend_clas{
-    animation: color_secend 500ms linear 1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 
 /* animathon img  */
@@ -110,6 +112,12 @@
         transform: rotate(360deg);
     }
 }
+
+/* color secend */
+.color_secend_clas{
+    animation: color_secend 500ms linear 1;
+}
+
 @keyframes color_secend {
     from{
       color:white;
