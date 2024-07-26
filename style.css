@@ -138,10 +138,10 @@
         margin-bottom: 9rem;
     }
     .minut{ 
-        height: 9rem;
+        height: 10rem;
     }
     .minut::before{
-        height: 5rem;
+        height: 5.5rem;
       
     }
     .secend{
