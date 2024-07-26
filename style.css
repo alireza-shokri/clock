@@ -137,11 +137,17 @@
     .name_me{
         margin-bottom: 9rem;
     }
+    .hour{
+        height:6.7rem;
+    }
+    .hour::before{
+        height: 3.4rem;
+    }
     .minut{ 
-        height: 10rem;
+        height: 10.4rem;
     }
     .minut::before{
-        height: 5.5rem;
+        height: 5.7rem;
       
     }
     .secend{
